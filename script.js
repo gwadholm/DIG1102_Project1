@@ -20,7 +20,7 @@ for (i=0; i < gameCount; i++) {
       alert(alertMessageLose);
       totalLoss++;
     } else if (computerChoice == "s") {
-      alert("You won! You picked " + userChoice + " which beats s");
+      alert(alertMessageWin);
       totalWin++;
     }
   } else if (userChoice === "p") {
@@ -28,7 +28,7 @@ for (i=0; i < gameCount; i++) {
       alert(alertMessageWin);
       totalWin++;
     } else if (computerChoice == "p") {
-      alert("It's a tie!");
+      alert(alertMessageTie);
       totalTie++;
     } else if (computerChoice == "s") {
       alert(alertMessageLose);
@@ -42,7 +42,7 @@ for (i=0; i < gameCount; i++) {
       alert(alertMessageWin);
       totalWin++;
     } else if (computerChoice == "s") {
-      alert("Its a tie!");
+      alert(alertMessageTie);
       totalTie++;
     } 
   } else {
