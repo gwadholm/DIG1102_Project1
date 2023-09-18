@@ -12,43 +12,19 @@ for (i=0; i < gameCount; i++) {
   let alertMessageWin = "You won! You picked " + userChoice + " and the computer picked " + computerChoice 
   let alertMessageLose = "Sorry, you lost. You picked " + userChoice + " and the computer picked " + computerChoice 
   
-  if (userChoice === "r") {
-    if (computerChoice === "r") {
+  if ((userChoice === "r" && computerChoice === "r") || (userChoice === "p" && computerChoice === "p") || (userChoice === "s" &&  computerChoice === "s")) {
       alert(alertMessageTie);
       totalTie++;
-    } else if (computerChoice === "p") {
-      alert(alertMessageLose);
-      totalLoss++;
-    } else if (computerChoice === "s") {
+  } else if ((userChoice === "r" && computerChoice === "s") || (userChoice === "p" && computerChoice === "r") || (userChoice === "s" &&  computerChoice === "p")) {
       alert(alertMessageWin);
       totalWin++;
-    }
-  } else if (userChoice === "p") {
-    if (computerChoice === "r") {
-      alert(alertMessageWin);
-      totalWin++;
-    } else if (computerChoice === "p") {
-      alert(alertMessageTie);
-      totalTie++;
-    } else if (computerChoice === "s") {
+  } else if ((userChoice === "r" && computerChoice === "p") || (userChoice === "p" && computerChoice === "s") || (userChoice === "s" &&  computerChoice === "r")) {
       alert(alertMessageLose);
       totalLoss++;
-    }
-  } else if (userChoice === "s") {
-    if (computerChoice === "r") {
-      alert(alertMessageLose);
-      totalLoss++;
-    } else if (computerChoice === "p") {
-      alert(alertMessageWin);
-      totalWin++;
-    } else if (computerChoice === "s") {
-      alert(alertMessageTie);
-      totalTie++;
-    } 
-  } else {
+ } else {
     alert("Please only enter r, p, or s as your choice");
     i--;
   }
-} 
+}
 
 alert("Games you won: " + totalWin + " | Games you lost: " + totalLoss + " | Games you tied: " + totalTie);
