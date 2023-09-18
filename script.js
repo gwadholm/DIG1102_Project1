@@ -51,4 +51,4 @@ for (i=0; i < gameCount; i++) {
   }
 } 
 
-alert("Games won: " + totalWin + " | Games lost: " + totalLoss + " | Games tied: " + totalTie);
+alert("Games you won: " + totalWin + " | Games you lost: " + totalLoss + " | Games you tied: " + totalTie);
