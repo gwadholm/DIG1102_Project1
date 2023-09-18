@@ -13,14 +13,14 @@ for (i=0; i < gameCount; i++) {
   let alertMessageLose = "Sorry, you lost. You picked " + userChoice + " and the computer picked " + computerChoice 
   
   if ((userChoice === "r" && computerChoice === "r") || (userChoice === "p" && computerChoice === "p") || (userChoice === "s" &&  computerChoice === "s")) {
-      alert(alertMessageTie);
-      totalTie++;
+    alert(alertMessageTie);
+    totalTie++;
   } else if ((userChoice === "r" && computerChoice === "s") || (userChoice === "p" && computerChoice === "r") || (userChoice === "s" &&  computerChoice === "p")) {
-      alert(alertMessageWin);
-      totalWin++;
+    alert(alertMessageWin);
+    totalWin++;
   } else if ((userChoice === "r" && computerChoice === "p") || (userChoice === "p" && computerChoice === "s") || (userChoice === "s" &&  computerChoice === "r")) {
-      alert(alertMessageLose);
-      totalLoss++;
+    alert(alertMessageLose);
+    totalLoss++;
  } else {
     alert("Please only enter r, p, or s as your choice");
     i--;
