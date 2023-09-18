@@ -13,35 +13,35 @@ for (i=0; i < gameCount; i++) {
   let alertMessageLose = "Sorry, you lost. You picked " + userChoice + " and the computer picked " + computerChoice 
   
   if (userChoice === "r") {
-    if (computerChoice == "r") {
+    if (computerChoice === "r") {
       alert(alertMessageTie);
       totalTie++;
-    } else if (computerChoice == "p") {
+    } else if (computerChoice === "p") {
       alert(alertMessageLose);
       totalLoss++;
-    } else if (computerChoice == "s") {
+    } else if (computerChoice === "s") {
       alert(alertMessageWin);
       totalWin++;
     }
   } else if (userChoice === "p") {
-    if (computerChoice == "r") {
+    if (computerChoice === "r") {
       alert(alertMessageWin);
       totalWin++;
-    } else if (computerChoice == "p") {
+    } else if (computerChoice === "p") {
       alert(alertMessageTie);
       totalTie++;
-    } else if (computerChoice == "s") {
+    } else if (computerChoice === "s") {
       alert(alertMessageLose);
       totalLoss++;
     }
   } else if (userChoice === "s") {
-    if (computerChoice == "r") {
+    if (computerChoice === "r") {
       alert(alertMessageLose);
       totalLoss++;
-    } else if (computerChoice == "p") {
+    } else if (computerChoice === "p") {
       alert(alertMessageWin);
       totalWin++;
-    } else if (computerChoice == "s") {
+    } else if (computerChoice === "s") {
       alert(alertMessageTie);
       totalTie++;
     } 
