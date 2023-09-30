@@ -5,7 +5,7 @@ let computerLetterChoice = ["r", "p", "s"];
 
 let gameCount = Number(prompt("How many rounds do you want to play?"));
 
-for (i=0; i < gameCount; i++) {
+for (let i=0; i < gameCount; i++) {
   let userChoice = prompt("Pick rock, paper or scissors (enter r, p or s)");
   let computerChoice = computerLetterChoice[Math.round(Math.random() * (2))];
   let alertMessageTie = "It's a tie! You picked " + userChoice + " and the computer picked " + computerChoice 
